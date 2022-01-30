@@ -1,0 +1,341 @@
+@import url('https://rsms.me/inter/inter.css');
+
+.brdr {
+    border: 1px black solid;
+}
+
+html,
+body {
+    --fontHeader: "Helvetica";
+    --fontContentFirst: "Inter";
+    --fontContentSecond: "Roboto Slab";
+}
+
+.bckg {
+
+    background-image: url(/assets/image/page_1/background.svg);
+    background-repeat: no-repeat;
+    /* background-size: 60%;
+    background-position-x: 100%;
+    background-position-y: 70%; */
+    background-size: 100%;
+}
+
+@media (min-width: 1024px) {
+
+    html,
+    body {
+        /* font-size: 14px;
+        line-height: 14px; */
+        font-size: 12px;
+        line-height: 12px;
+
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    /* 9.955px */
+    html,
+    body {
+        font-size: 9px;
+        line-height: 9px;
+    }
+
+    /* .bckg {
+        background-size: 60%;
+        background-position-x: 100%;
+        background-position-y: 47%;
+    } */
+
+    .title-basket {
+        display: none;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+
+    /* 9.955px */
+    html,
+    body {
+        font-size: 8px;
+        line-height: 8px;
+    }
+
+    /* 
+    .bckg {
+        background-size: 60%;
+        background-position-x: 100%;
+        background-position-y: 150%;
+    } */
+
+    .title-basket {
+        display: none;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+
+    /* 9.955px */
+    html,
+    body {
+        font-size: 7px;
+        line-height: 7px;
+    }
+
+    .title-basket {
+        display: none;
+    }
+}
+
+@media (max-width: 319px) {
+
+    /* 9.955px */
+    html,
+    body {
+        font-size: 6px;
+        line-height: 6px;
+    }
+
+    .title-basket {
+        display: none;
+    }
+
+    /* .bckg {
+        background-size: 60%;
+        background-position-x: 100%;
+        background-position-y: 100%;
+    } */
+    /* не совсем понятно. фон не двигается для маленьких экранов */
+}
+
+
+
+@media (max-width: 767px) {
+
+    .bckg {
+
+        /* background-image: url(/assets/image/page_1/background.svg);
+        background-repeat: no-repeat; */
+        background-size: 100%;
+        /* background-position-x: 100%; */
+        background-position-y: 70%;
+    }
+
+
+}
+
+
+
+.header__title {
+    font-family: var(--fontHeader);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.143rem;
+    /* opacity: 0.5; */
+    /* line-height: 100%; */
+    color: #000000;
+
+    /* opacity: 0.5; */
+}
+
+.header {
+    /* width: 1440px; */
+    height: 40px;
+    max-width: 100%;
+    background-image: url(/assets/image/header.png);
+    background-repeat: no-repeat;
+    padding-bottom: 0px;
+    /* background-size: 80%; */
+    filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.15));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    /* line-height: 100%; */
+    /* z-index: 1; */
+}
+
+.main-top {
+    margin-left: 5.27%;
+    margin-right: 0%;
+
+    padding-top: 3rem;
+}
+
+
+
+.main-content {
+    margin-left: 8%;
+}
+
+/* собственный стиль для заголовка карточки */
+.main-content-card__title {
+    font-family: var(--fontContentFirst), serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 4.285rem;
+    line-height: 5.142rem;
+
+    color: #000000;
+
+}
+
+.main-content-card__text {
+    font-family: var(--fontContentSecond);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.428rem;
+    line-height: 160%;
+
+    color: #000000;
+}
+
+.content-main__img {
+    max-width: 75%;
+    margin: 1rem;
+}
+
+
+.logo {
+
+    width: 13.96%;
+    height: 4.44%;
+}
+
+.logo__img {
+    max-width: 100%;
+    min-width: 55px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+}
+
+.button_small {
+    background-color: #5222D0;
+    border: none;
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 0px;
+    font-size: 0.928rem;
+    line-height: 0.928rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    width: 70%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+}
+
+.button_big {
+    background-color: #5222D0;
+    border: none;
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 0px;
+    font-size: 0.928rem;
+    line-height: 0.928rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    width: 50%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.icon-buy {
+    /* height: 0.928rem; */
+    /* padding: 0.1rem; */
+}
+
+.title-buy {
+    font-family: var(--fontContentFirst);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5rem;
+    line-height: 2.5px;
+    /* identical to box height */
+
+    color: #FFFFFF;
+}
+
+.container-to-center-elements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-to-right-elements {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+
+.footer {}
+
+.section-nav {
+    display: none;
+}
+
+@media (min-width: 768px) {
+
+    .footer {
+        display: none;
+    }
+
+    .section-nav {
+        margin-top: 30%;
+        display: flex;
+        font-family: var(--fontContentSecond);
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.428rem;
+        line-height: 1.428rem;
+
+    }
+
+
+
+}
+
+.menu {
+    /* display: flex;
+    justify-content: space-evenly; */
+}
+
+.menu__items {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 2rem; */
+    /* padding-block-end: 0px; */
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+
+}
+
+.menu__item {
+    /* list-style-type: none; */
+    /* padding: 1rem; */
+    /* margin: 0.5rem; */
+    /* margin-left: 0rem; */
+}
+
+.menu__link_left {
+    /* margin-left: 0rem; */
+}
+
+.menu__link {
+    text-decoration: none;
+    display: block;
+}
