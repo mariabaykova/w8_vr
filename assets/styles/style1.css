@@ -11,16 +11,6 @@ body {
     --fontContentSecond: "Roboto Slab";
 }
 
-.bckg {
-
-    background-image: url(/assets/image/page_1/background.svg);
-    background-repeat: no-repeat;
-    /* background-size: 60%;
-    background-position-x: 100%;
-    background-position-y: 70%; */
-    background-size: 100%;
-}
-
 @media (min-width: 1024px) {
 
     html,
@@ -43,12 +33,6 @@ body {
         line-height: 9px;
     }
 
-    /* .bckg {
-        background-size: 60%;
-        background-position-x: 100%;
-        background-position-y: 47%;
-    } */
-
     .title-basket {
         display: none;
     }
@@ -62,13 +46,6 @@ body {
         font-size: 8px;
         line-height: 8px;
     }
-
-    /* 
-    .bckg {
-        background-size: 60%;
-        background-position-x: 100%;
-        background-position-y: 150%;
-    } */
 
     .title-basket {
         display: none;
@@ -102,29 +79,11 @@ body {
         display: none;
     }
 
-    /* .bckg {
-        background-size: 60%;
-        background-position-x: 100%;
-        background-position-y: 100%;
-    } */
-    /* не совсем понятно. фон не двигается для маленьких экранов */
 }
 
 
 
-@media (max-width: 767px) {
-
-    .bckg {
-
-        /* background-image: url(/assets/image/page_1/background.svg);
-        background-repeat: no-repeat; */
-        background-size: 100%;
-        /* background-position-x: 100%; */
-        background-position-y: 70%;
-    }
-
-
-}
+@media (max-width: 767px) {}
 
 
 
