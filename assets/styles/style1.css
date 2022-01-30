@@ -167,7 +167,9 @@ body {
 
 
 .main-content {
-    margin-left: 8%;
+    /* самый маленький отступ На странице */
+    margin-left: 5.55%;
+    margin-right: 5%;
 }
 
 /* собственный стиль для заголовка карточки */
@@ -279,34 +281,15 @@ body {
     align-items: center;
 }
 
-
-
-.footer {}
-
-.section-nav {
-    display: none;
+.card-border {
+    border-color: #EC615B;
 }
 
-@media (min-width: 768px) {
-
-    .footer {
-        display: none;
-    }
-
-    .section-nav {
-        margin-top: 30%;
-        display: flex;
-        font-family: var(--fontContentSecond);
-        font-style: normal;
-        font-weight: 300;
-        font-size: 1.428rem;
-        line-height: 1.428rem;
-
-    }
-
-
-
+.footer {
+    margin-left: 8.75%;
+    margin-top: 2rem;
 }
+
 
 .menu {
     /* display: flex;
